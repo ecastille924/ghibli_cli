@@ -18,10 +18,7 @@ def self.fetch_films
         film.director = film_hash["director"]
         film.producer = film_hash["producer"]
         film.rotten_tomatoes_score = film_hash["rt_score"]
-        binding.pry
     end
-
-
 end
 
 end
