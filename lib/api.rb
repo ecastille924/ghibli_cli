@@ -10,21 +10,15 @@ def self.fetch_films
 
     array_of_films = hash
 
-    #title
-    #description
-    #release_date
-    #director
-    #producer
-    #rt_score
-
     array_of_films.each do |film_hash|
-    title = film_hash["title"]
-    description = film_hash["description"]
-    release_date = film_hash["release_date"]
-    director = film_hash["director"]
-    producer = film_hash["producer"]
-    rotten_tomatoes_score = film_hash["rt_score"]
-    binding.pry
+        film = Film.new
+        film.title = film_hash["title"]
+        film.description = film_hash["description"]
+        film.release_date = film_hash["release_date"]
+        film.director = film_hash["director"]
+        film.producer = film_hash["producer"]
+        film.rotten_tomatoes_score = film_hash["rt_score"]
+        binding.pry
     end
 
 
