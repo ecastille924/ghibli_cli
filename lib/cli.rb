@@ -28,6 +28,16 @@
 
     def ask_for_film_choice
         puts "Enter film number for more info!"
+
+        index = gets.strip.to_i - 1
+
+        until index.between?(0, Film.all.length - 1)
+            puts "Invalid selection. Please enter a number 1 - 20."
+            index = gets.strip.to_i - 1
+        end
+
+        film_instance = Film.all[index]
+        puts film_instance.title
     end
 end
 
