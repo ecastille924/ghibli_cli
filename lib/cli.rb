@@ -8,17 +8,28 @@
     end
 
     def menu
-        puts "Wanna see a full list of Studio Ghibli films?"
+        puts "\n"
+        puts "Wanna see the full list of Studio Ghibli films?"
+        puts "\n"
         puts "Type 'y' to continue, or 'n' to exit."
+        puts "\n"
 
         user_input = gets.strip.downcase 
 
         if user_input == "y"
             puts "\n"
-            puts "Fatastic! Here's a list of all 20:"
+            puts "Fatastic! Here's the list of all 20:"
             puts "\n"
             show_list_of_films
             ask_for_film_choice
+
+            sleep(4)
+
+            menu
+
+        else
+            puts "\n"
+            puts "Thanks for using the program! Bye!"
         end
     end
 
@@ -44,15 +55,13 @@
     end
         
         def display_film_info(film)
-            sleep(1)
             puts "\n"
             puts "Title - " + film.title 
             puts "Release Date - " + film.release_date
             puts "Director - " + film.director
             puts "Producer - " + film.producer
             puts "Rotten Tomatoes Score - " + film.rotten_tomatoes_score
-            puts "Synopsis - " + film.description
-                
+            puts "Synopsis - " + film.description     
         end
 end
 
