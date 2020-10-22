@@ -16,14 +16,18 @@
         if user_input == "y"
             puts "Fatastic! Here's a list of all 20:"
             show_list_of_films
+            ask_for_film_choice
         end
     end
 
     def show_list_of_films
-        Film.all.each do |film|
-            puts film.title
-        #binding.pry
+        Film.all.each.with_index(1) do |film, index|
+            puts "#{index}. #{film.title}"
         end
+    end
+
+    def ask_for_film_choice
+        puts "Enter film number for more info!"
     end
 end
 
