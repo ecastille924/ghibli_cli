@@ -2,7 +2,6 @@
 
     def start
        puts "Welcome!!!"
-
        API.fetch_films
        self.menu
     end
@@ -50,7 +49,6 @@
         end
 
         film_instance = Film.all[index]
-
         display_film_info(film_instance)
     end
         
