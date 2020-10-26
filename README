@@ -17,9 +17,13 @@ Enter the number corresponding to the fil you'd like to know about.
 You will be shown a synopsis, learn who directed & produced the film, the year it was released, and the 
 ever-important Rotten Tomatoes score. 
 
+## Contributing 
+
+Contributing welcome. Please contact the owner of the repository before making any changes.
+
 ## License
 
-The gem is available as open source under the terms of the MIT License. 
+The repository is available as open source under the terms of the MIT License. 
 Copyright 2020 Erick Castille
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
