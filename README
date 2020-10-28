@@ -7,7 +7,7 @@ view a list of all 20 films and select a particilar film to learn more.
 ## Installation
 
 Clone the repository with 
-git clone git@github.com:ecastille924/ghibli_cli.git
+git clone https://github.com/ecastille924/ghibli_cli.git
 
 ## Usage
 
